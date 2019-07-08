@@ -3,3 +3,4 @@ server:
 spring:
   application:
     name: feign-1
+port: 1111
