@@ -1,15 +1,13 @@
 server:
-  port: 8761
+  port: 8765
 
 spring:
   application:
-    name: eureka-1
+    name: feign-1
     
 eureka:
   instance:
     hostname: localhost
   client:
-   register-with-eureka: false
-   fetch-registry: false
    service-url:
       defaultZone: http://localhost:8761/eureka/
