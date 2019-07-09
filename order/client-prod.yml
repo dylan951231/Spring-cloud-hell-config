@@ -1,13 +1,13 @@
 server:
-  port: 8766
-
+  port: 8768
 spring:
-  thymeleaf:
-    prefix: classpath:/static
-    suffix: .html
   application:
     name: client
-eureka: 
-  client: 
-   service-url:
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
+eureka:
+  client:
+    service-url:
       defaultZone: http://localhost:8761/eureka/
